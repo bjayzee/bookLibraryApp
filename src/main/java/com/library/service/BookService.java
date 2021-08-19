@@ -14,6 +14,9 @@ public interface BookService {
     void addBookToCategory(Category title, Book book);
     void deleteBook(Integer title);
     void addBookToFavorite(String fa);
+
+    List<Book> findAllFavorite();
+
     void editBook(BookEditDto bookEditDto);
 
 //    List<Book> findFavorite();

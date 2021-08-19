@@ -76,12 +76,12 @@ public class BookAPIs {
     @PostMapping("/add-favorites")
     public void addBookToFavorite(@RequestBody String bookTitle){
         if(bookTitle != null){
-//            bookService.addBookToFavorite(bookTitle);
+            bookService.addBookToFavorite(bookTitle);
         }
     }
-//    @GetMapping("/")
-//    public List<Book> findFavorite(){
-////        return bookService.findFavorite();
-//    }
+    @GetMapping("/find-favorites")
+    public List<Book> findFavorite(){
+        return bookService.findAllFavorite();
+    }
 
 }

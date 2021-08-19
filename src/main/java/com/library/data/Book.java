@@ -16,7 +16,7 @@ public class Book {
     private String yearOfPub;
     private String author;
 
-    private boolean favorite;
+    private Boolean favorite;
 
 
     @ManyToOne
